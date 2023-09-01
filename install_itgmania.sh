@@ -6,6 +6,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
     echo "You chose the safe route"
 then
     echo "I warned you! Downloading setup files and installing dependencies via apt-get"
+    cd ~/
     wget https://github.com/itgmania/itgmania/releases/download/v0.7.0/ITGmania-0.7.0-Linux-no-songs.tar.gz
     tar xzf ITGmania-0.7.0-Linux-no-songs.tar.gz
     cd ITGmania-0.7.0-Linux-no-songs/
